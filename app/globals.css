@@ -17,6 +17,7 @@
 }
 
 body {
+  font-family: var(--font-archivo), sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +25,32 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  height: 16rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(24, 29, 36, 0.164) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(24, 29, 36, 0.164) 1px, transparent 1px);
+  background-size: 2.5rem 2.5rem;
+  background-position: center center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-gabarito), sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
